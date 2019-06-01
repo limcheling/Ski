@@ -126,9 +126,9 @@ Mountain::Mountain(const std::string &filename)
 
 const std::vector<short>& Mountain::findLongestPath()
 {
-    for(unsigned int row = 0; row < numRow; row++)
+    for(int row = 0; row < numRow; row++)
     {
-        for(unsigned int col = 0; col < numCol; col++)
+        for(int col = 0; col < numCol; col++)
         {
             path.clear();
             creatingPath(row, col, true);
